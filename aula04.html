@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+    <script type="text/javascript">
+		//nome = 'João';
+        //const userName = prompt('Informe seu nome:');
+		//let lastName = prompt('Informe seu sobrenome:');
+		//let age = prompt('Informe sua idade: ');
+		//alert('Nome, sobrenome e idade :'+ userName +' '+ lastName +''+ ', e '+ age + 'anos.');
+		let num1 = prompt('Informe o primeiro valor: ');
+		let num2 = prompt('Informe o segundo valor: ');
+		//*1º Condição aplicada para verificar se o valor digitado é numero
+		//if (isNaN(num1) || isNaN(num2)){
+		//	alert('Informe apenas números!!');
+		//} else{
+		//	num1 = parseFloat(num1);//*é necessário declarar a precedência da variávewl, parseFloat receberá um número
+		//	num2 = parseFloat(num2);
+		//	alert('Resultado: ' + (num1 + num2));//*para somar precisa envolver entre parênteses
+		//}
+        //*2º Condição aplicada para verificar se os dois numeros sao numeros e não estão vazio
+        //if (!isNaN(num1) && !isNaN(num2) && num1 != '' && num2 != ''){
+        //    num1 = parseFloat(num1);
+		//	num2 = parseFloat(num2);
+		//    alert('Resultado: ' + (num1 + num2));
+		//} else{//
+		//	alert('Informe apenas números!!');
+		//}//
+		//3ºCondição para verificações, se uma não atender o comando do if, já cai direto para o usuario informar números novamente
+		if (isNaN(num1) || isNaN(num2) || num1 == '' || num2 == ''){
+			alert('Informe apenas números!!');
+		} else{
+			num1 = parseFloat(num1);
+			num2 = parseFloat(num2);
+		    alert('Resultado: ' + (num1 + num2));
+		}
+
+		
+		
+		
+    </script>
