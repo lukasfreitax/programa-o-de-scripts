@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type ="text/javascript"> 
+		//criando um array vazio
+		let listaFrutas = [];
+        // adicionando um item ao array
+		listaFrutas.push('Caju ');
+		//adicionando varios itens ao array
+		listaFrutas.push('Morango ','Tamarindo ','Uva ', 'Manga');
+		let fruta = prompt('Informe uma fruta:');
+		listaFrutas.push(fruta);
+        //alterando itens
+        //listaFrutas[3] = 'Abacaxi '; 
+        //removendo itens
+        //listaFrutas.pop(); // remove o ultimo
+
+        //removendo com splice
+        // listaFrutas.splice(2, 1); //vai na posição escolhida, e remove 1 (removre morango e o array é organizado)
+
+
+        //1.exibindo na tela com laço for
+        //let auxHtml = '';
+        //for (let i = 0; i < listaFrutas.length; i++){
+        //    auxHtml += listaFrutas[i] +  '<br/>'; // ele vai exibir na tela como se fosse um site
+        //}
+        //document.write(auxHtml); // fazendo isso o laço trabalha com maior performance 
+
+
+        //2.exibindo na tela com while
+        auxHtml = '';
+        let posicao = 0;
+        while (posicao<listaFrutas.length){
+            auxHtml += listaFrutas[posicao] + '<br/>';
+            posicao ++ ; 
+        }
+        document.write(auxHtml);
+        
+        //outras possibilidades
+        auxHtml = '';
+        for (let item in listaFrutas) {
+            auxHtml += listaFrutas[item] + '<br/>';
+        }
+        document.write(auxHtml);
+
+
+
+			
+	
+	</script>
+</head>
+<body>
+    
+</body>
+</html>
